@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/shop/shop",
+    "pages/mine/mine",
+    "pages/sousuo/sousuo",
+    "pages/cart/cart",
+    "pages/obligation/obligation",
+    "pages/finish/finish",
+    "pages/recruitment/recruitment",
+    "pages/currentOrder/currentOrder",
+    "pages/goodsDetail/goodsDetail",
+    "pages/address/address",
+    "pages/personInfo/personInfo",
+    "pages/coupon/coupon",
+    "pages/myOrder/myOrder",
+    "pages/register/register"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#313131",
+    "navigationBarTitleText": "医佳护",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#2571c9",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home-icon.png",
+        "selectedIconPath": "images/homeSelected-icon.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "iconPath": "images/shop-icon.png",
+        "selectedIconPath": "images/shopSelected-icon.png",
+        "text": "商城"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "images/cart-icon.png",
+        "selectedIconPath": "images/cartSelected-icon.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/mine-icon.png",
+        "selectedIconPath": "images/mineSelected-icon.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

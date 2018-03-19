@@ -1,0 +1,78 @@
+<view style='background-color:plum;height:88rpx'>
+  <text style='position:relative;left:200rpx;'>您还未申请商家</text>
+  <text style='position:relative;left:350rpx;'>绑定</text>
+</view>
+<form bindsubmit=''>
+
+
+<view style='height:100rpx;border-bottom:0.1rpx solid gainsboro;'>
+<text style='position:relative;left:30rpx;top:25rpx;width:40%'>服务商代码：</text>
+<input style='position:relative;top:-30rpx;left:300rpx;width:80%' placeholder='请输入服务商代码'></input>
+</view>
+
+
+<view style='height:100rpx;border-bottom:0.1rpx solid gainsboro;'>
+<text style='position:relative;left:30rpx;top:25rpx;width:40%'>姓名：</text>
+<input style='position:relative;top:-30rpx;left:300rpx;width:80%' placeholder='请输入姓名'></input>
+</view>
+
+
+<view style='height:100rpx;border-bottom:0.1rpx solid gainsboro;'>
+<text style='position:relative;left:30rpx;top:25rpx;width:40%'>身份证号：</text>
+<input style='position:relative;top:-30rpx;left:300rpx;width:80%' placeholder='请输入身份证号'></input>
+</view>
+
+<view style='height:100rpx;border-bottom:0.1rpx solid gainsboro;'>
+<text style='position:relative;left:30rpx;top:25rpx;width:40%'>手机号码：</text>
+<input style='position:relative;top:-30rpx;left:300rpx;width:80%' placeholder='请输入手机号码'></input>
+</view>
+
+<view style='height:100rpx;border-bottom:0.1rpx solid gainsboro;'>
+<text style='position:relative;left:30rpx;top:25rpx;width:40%'>登录账号：</text>
+<input style='position:relative;top:-30rpx;left:300rpx;width:80%' placeholder='请输入登录账号'></input>
+</view>
+
+<view style='height:100rpx;border-bottom:0.1rpx solid gainsboro;'>
+<text style='position:relative;left:30rpx;top:25rpx;width:40%'>登录密码：</text>
+<input style='position:relative;top:-30rpx;left:300rpx;width:80%' placeholder='请输入登录密码'></input>
+</view>
+
+
+<view style='height:100rpx;border-bottom:0.1rpx solid gainsboro;'>
+<text style='position:relative;left:30rpx;top:25rpx;width:40%'>位置：</text>
+<input style='position:relative;top:-30rpx;left:300rpx;width:80%' placeholder='请选择'></input>
+</view>
+
+<view style='height:100rpx;border-bottom:0.1rpx solid gainsboro;'>
+<text style='position:relative;left:30rpx;top:25rpx;width:40%'>详细地址：</text>
+<input style='position:relative;top:-30rpx;left:300rpx;width:80%' placeholder='请输入详细地址'></input>
+</view>
+
+<view style='height:100rpx;border-bottom:0.1rpx solid gainsboro;'>
+<text style='position:relative;left:30rpx;top:25rpx;width:40%'>产品分类：</text>
+<input style='position:relative;top:-30rpx;left:300rpx;width:80%' placeholder='请选择分类'></input>
+</view>
+
+<image style='height:20rpx;width:100%;background-color:gainsboro'></image>
+
+<view style='height:550rpx;'>
+
+<text style='position:relative;top:50rpx;'>身份证照片</text>
+<view style='position:relative;height:140rpx;flex-wrap:nowrap;'>
+<image style='position:relative;top:100rpx;left:30rpx;height:140rpx;width:300rpx;border:0.1rpx solid red;'></image>
+<image style='position:relative;top:100rpx;right:-120rpx;height:140rpx;width:300rpx; border:0.1rpx solid blue;'></image>
+</view>
+
+<text style='position:relative;top:250rpx;'>品牌logo</text>
+<image style='position:relative;top:310rpx;left:30rpx;height:140rpx;width:300rpx;border:0.1rpx solid pink;'></image>
+
+<text style='position:relative;top:450rpx;'>营业执照</text>
+<image style='position:relative;top:510rpx;left:30rpx;height:140rpx;width:300rpx;border:0.1rpx solid purple;'></image>
+
+<!-- <image style='height:20rpx;width:100%;background-color:gainsboro'></image> -->
+
+
+</view>
+
+</form>
+<button style='width:60%'>提交</button>

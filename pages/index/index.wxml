@@ -1,0 +1,95 @@
+<view class="swiper-container">
+  <swiper class="swiper_box" autoplay="true" interval="3000" duration="1000" bindchange="swiperchange">
+    <block wx:for="{{banners}}" wx:key="id">
+      <swiper-item>
+        <image bindtap="tapBanner" data-id="{{item.businessId}}" src="{{item.picUrl}}" class="slide-image" width="100%" height="452rpx" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="dots">
+    <block wx:for="{{banners}}" wx:key="unique">
+      <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+    </block>
+  </view>
+</view>
+
+
+<view class='shop-name' style='width:100%;height:46rpx;background-color:black;'>
+  <text class='shop-name-style' style='width:100%;color:white;font-family: PingFangSC-Regular, sans-serif;font-size:36rpx;'>北京养生堂</text>
+</view>
+
+<view class='search'>
+
+  <view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+
+      <view class="weui-search-bar__box">
+        <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+        <input bindblur='hideInput' type="text" class="weui-search-bar__input" placeholder="搜索症状、药品、品牌" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+        <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+          <icon type="clear" size="14"></icon>
+        </view>
+      </view>
+
+      <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+        <icon class="weui-icon-search" type="search" size="14"></icon>
+        <view class="weui-search-bar__text">搜索症状、药品、品牌</view>
+      </label>
+    </view>
+    <!-- 
+    <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view> -->
+  </view>
+
+  <view class="weui-cells searchbar-result" wx:if="{{inputVal.length>0}}">
+  </view>
+</view>
+
+<view class="flex-row" style="display:flex;height:160rpx;background-color:white;">
+  <image style='margin-top:10rpx;margin-left:62rpx;height:110rpx;width:110rpx;color:#ff7e00;font-size:25rpx;overflow:visible;text-align:center;' src='../../images/live-icon.png'>直播</image>
+  <image style='margin-top:10rpx;margin-left:62rpx;height:110rpx;width:110rpx;color:#2b77ef;font-size:25rpx;overflow:visible;text-align:center;' src='../../images/consultation-icon.png'>用药咨询</image>
+  <image style='margin-top:10rpx;margin-left:62rpx;height:110rpx;width:110rpx;color:#ffce00;font-size:25rpx;overflow:visible;text-align:center;' src='../../images/credit-icon.png'>领券中心</image>
+  <image style='margin-top:10rpx;margin-left:62rpx;height:110rpx;width:110rpx;color:#1ea55e;font-size:25rpx;overflow:visible;text-align:center;' src='../../images/letter-icon.png'>快报</image>
+</view>
+<view style='width:100%;height:184rpx;'>
+  <image style='margin-top:20rpx;margin-bottom:20rpx;width:100%;height:144rpx;' src='../../images/liveDoor.png'></image>
+</view>
+
+<view style='background-color:white;margin-bottom:0;margin-top:0;font-family: PingFangSC-Regular, sans-serif;font-size:48rpx;color:#101010;' class="weui-cells__title">热销产品</view>
+
+<block wx:for="{{hot_good}}" wx:key="id" wx:for-item="item">
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__hd">
+        <image src="{{item.iconUrl}}" style="margin-left: 30rpx;margin-right: 30rpx;width:188rpx; height: 188rpx;"></image>
+      </view>
+      <view class="weui-cell__bd">
+        <text style='font-family: PingFangSC-Regular, sans-serif;font-size:33rpx;color:#101010;'>{{item.name}}</text>
+        <text>\n</text>
+        <text style='font-family: PingFangSC-Regular, sans-serif;font-size:30rpx;color:#a0a0a0;bottom:20rpx;'>用于缓解：{{item.effect}}\n</text>
+        <text style='font-family: PingFangSC-Regular, sans-serif;font-size:30rpx;color:#1c1c1c;'>月销量：{{item.monthlySales}}份\n</text>
+        <text style='font-family: PingFangSC-Regular, sans-serif;font-size:36rpx;color:red;'>￥</text>
+        <text style='font-family: PingFangSC-Regular, sans-serif;font-size:45rpx;color:red;bottom:20rpx;'>{{item.price}}</text>
+        <image class='hotCart-icon' src='../../images/hotCart-icon.png'></image>
+
+      </view>
+    </view>
+  </view>
+</block>
+
+
+
+
+
+<view style='background-color:white;margin-top:10rpx;font-family: PingFangSC-Regular, sans-serif;font-size:48rpx;color:#101010;' class="weui-cells__title">商家信息
+  <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view bindtap='position' style='font-family: PingFangSC-Light, sans-serif;font-size:36rpx;color:#1c1c1c;' class="weui-cell__bd">地址：北京市朝阳区时代凌宇大厦
+      <image class='position-icon' src='../../images/position-icon.png'></image>
+    </view>
+  </view>
+
+  <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view bindtap='call' style='font-family: PingFangSC-Light, sans-serif;font-size:36rpx;color:#1c1c1c;' class="weui-cell__bd">电话：010-123456
+      <image class='phone-icon' src='../../images/phone-icon.png'></image>
+    </view>
+  </view>
+</view>

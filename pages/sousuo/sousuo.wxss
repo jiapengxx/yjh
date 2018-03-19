@@ -1,0 +1,76 @@
+/* pages/sousuo/sousuo.wxss */
+
+@import "/wxSearch/wxSearch.wxss";
+
+page{
+    background-color: #F8F8F8;
+    font-size: 16px;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+.page__bd {
+    padding-bottom: 10px;
+}
+.page__bd_spacing {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page__ft{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.page__title {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.page__desc {
+    margin-top: 5px;
+    color: #888888;
+    text-align: left;
+    font-size: 14px;
+}
+.searchbar-result{
+    margin-top: 0;
+    font-size: 14px;
+}
+.searchbar-result:before{
+    display: none;
+  
+}
+.weui-cell{
+    padding: 12px 15px 12px 25px;
+}
+/* pages/list/list.wxss */  
+.weui-search-bar {  
+    position:relative;  
+    padding:6px 10px;  
+    display:-webkit-box;  
+    display:-webkit-flex;  
+    display:flex;  
+    box-sizing:border-box;  
+    background-color:#EFEFF4;  
+    border-top:0 solid #D7D6DC;  
+    border-bottom:0 solid #D7D6DC;  
+    border-radius:4px;  
+}  
+  
+.search-log{  
+    border:1px solid #eee !important;  
+    display:inline-block !important;  
+    margin-left:10px !important;  
+    margin-top:5px !important;  
+    border-radius:5px;  
+    padding-left:14px;  
+    padding-right:14px;  
+    box-sizing:border-box;  
+    text-align:center;  
+    text-decoration:none;  
+    line-height:2.55555556;  
+}  
+  
+.clear-search-log{  
+    text-align: center;  
+}  

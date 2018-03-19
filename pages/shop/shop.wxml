@@ -1,0 +1,109 @@
+
+<view class="swiper-container">
+  <swiper class="swiper_box" autoplay="true" interval="3000" duration="1000" bindchange="swiperchange">
+    <block wx:for="{{banners}}" wx:key="id">
+      <swiper-item>
+        <image bindtap="tapBanner" data-id="{{item.businessId}}" src="{{item.picUrl}}" class="slide-image" width="100%" height="300rpx" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="dots">
+    <block wx:for="{{banners}}" wx:key="unique">
+      <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+    </block>
+  </view>
+</view>
+
+
+<view class='search'>
+  <view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+      <view class="weui-search-bar__box">
+        <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+        <input bindblur='hideInput' type="text" class="weui-search-bar__input" placeholder="搜索症状、药品、品牌" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+        <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+          <icon type="clear" size="14"></icon>
+        </view>
+      </view>
+      <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+        <icon class="weui-icon-search" type="search" size="14"></icon>
+        <view class="weui-search-bar__text">搜索症状、药品、品牌</view>
+      </label>
+    </view>
+    <!-- 
+    <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view> -->
+  </view>
+
+  <view class="weui-cells searchbar-result" wx:if="{{inputVal.length>0}}">
+  </view>
+</view>
+
+<view class='mContainer'>
+<image style='margin-top:20rpx;margin-left:25rpx;height:120rpx;width:120rpx;font-family: PingFangSC-Regular, sans-serif;color:#333333;font-size:27rpx;overflow:visible;text-align:center;' src='../../images/lsyd.png'>连锁药店</image>
+  <image style='margin-top:20rpx;margin-left:25rpx;height:120rpx;width:120rpx;font-family: PingFangSC-Regular, sans-serif;color:#333333;font-size:27rpx;overflow:visible;text-align:center;' src='../../images/jkmr.png'>健康美容</image>
+  <image style='margin-top:20rpx;margin-left:25rpx;height:120rpx;width:120rpx;font-family: PingFangSC-Regular, sans-serif;color:#333333;font-size:27rpx;overflow:visible;text-align:center;' src='../../images/jkysl.png'>健康饮食</image>
+  <image style='margin-top:20rpx;margin-left:25rpx;height:120rpx;width:120rpx;font-family: PingFangSC-Regular, sans-serif;color:#333333;font-size:27rpx;overflow:visible;text-align:center;' src='../../images/xyl.png'>西药类</image>
+    <image style='margin-top:20rpx;margin-left:25rpx;height:120rpx;width:120rpx;font-family: PingFangSC-Regular, sans-serif;color:#333333;font-size:27rpx;overflow:visible;text-align:center;' src='../../images/zyzyl.png'>中医中药</image>
+</view>
+
+
+
+<view  style='font-family: PingFangSC-Regular, sans-serif;text-align:center;background-color:red;font-size:42rpx;color:#333333;'>
+  <text>推荐商品</text>
+</view>
+
+<view class='tContainer' style='height:374rpx;'>
+<view style='height:374rpx;width:374rpx;'>
+<image style='height:374rpx;width:374px;border:0.2rpx solid #313131;' src='../../images/1.png'></image>
+</view>
+<view class='tContainer' style='height:374rpx;width:374rpx;'>
+<view style='height:187rpx;width:374rpx;'>
+<image style='height:374rpx;width:374rpx;border:0.2rpx solid #313131;' src='../../images/2.png'></image>
+</view>
+<view style='height:187rpx;width:187rpx;'>
+<image style='height:187rpx;width:187rpx;border:0.2rpx solid #313131;' src='../../images/3.png'></image>
+</view>
+<view style='height:187rpx;width:187rpx;'>
+<image style='height:187rpx;width:187rpx;border:0.2rpx solid #313131;' src='../../images/4.png'></image>
+</view>
+</view>
+</view>
+
+
+
+<view style='font-family: PingFangSC-Regular, sans-serif;text-align:center;background-color:red;font-size:42rpx;color:#333333;'>
+  <text >拼健康</text>
+</view>
+<view class='pContainer' style='height:500rpx;'>
+<view style='height:250rpx;width:250rpx;'>
+<image style='height:250rpx;width:250rpx;border:0.2rpx solid #313131;' src='../../images/5.png'></image>
+</view>
+<view style='height:250rpx;width:250rpx;'>
+<image style='height:250rpx;width:250rpx;border:0.2rpx solid #313131;' src='../../images/6.png'></image>
+</view>
+<view style='height:250rpx;width:250rpx;'>
+<image style='height:250rpx;width:250rpx;border:0.2rpx solid #313131;' src='../../images/7.png'></image>
+</view>
+<view style='height:250rpx;width:250rpx;'>
+<image style='height:250rpx;width:250rpx;border:0.2rpx solid #313131;' src='../../images/1.png'></image>
+</view>
+<view style='height:250rpx;width:250rpx;'>
+<image style='height:250rpx;width:250rpx;border:0.2rpx solid #313131;' src='../../images/2.png'></image>
+</view>
+<view style='height:250rpx;width:250rpx;'>
+<image style='height:250rpx;width:250rpx;border:0.2rpx solid #313131;' src='../../images/3.png'></image>
+</view>
+</view>
+
+<view style='font-family: PingFangSC-Regular, sans-serif;text-align:center;background-color:red;font-size:42rpx;color:#333333;'>
+  <text >最新活动</text>
+</view>
+<view style='height:250rpx;'>
+<image src='../../images/shop_activity.jpg' style='height:250rpx;width:100%'></image>
+</view>
+
+
+<!-- <import src="/wxSearch/wxSearch.wxml" />
+<input bindinput="wxSearchInput" bindfocus="wxSerchFocus" value="{{wxSearchData.value}}" bindblur="wxSearchBlur" class="wxSearch-input" placeholder="搜索"></input>
+<template is="wxSearch" data="{{wxSearchData}}" /> -->
+

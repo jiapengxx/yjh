@@ -1,0 +1,40 @@
+.container{
+  min-height: 100%;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+.background-img{
+position: absolute;
+top: 0px;
+width: 100%;
+height: 173px;
+}
+.userinfo {
+position: absolute;
+top: 40px;
+left: 40px;
+width:220px;
+}
+.userinfo-avatar {
+  width: 160rpx;
+  height: 160rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  font-size: 15pt;
+  color: #fff;
+}
+.my-item{
+  position: relative;
+   top:78px; 
+    width: 100%;
+    background: url(https://cdn.it120.cc/images/weappshop/arrow-right.png) no-repeat 750rpx center;
+    background-size: 16rpx auto,750rpx auto;
+    margin: 20rpx 0; 
+    border-bottom: 1px solid #eee;
+    height: 100rpx;
+    line-height: 100rpx;
+    padding-left: 100rpx;
+}
+

@@ -1,0 +1,20 @@
+/* pages/cart/cart.wxss */
+.img{position:relative;
+ top: 300rpx;
+ left: 40%;
+  height:160rpx;
+  width:160rpx;
+  
+}
+.txt{
+  position: relative;
+  top: 330rpx;
+  text-align: center;
+  color: plum
+}
+.qgg{
+  position: relative;
+  left: 20%;
+  top: 350rpx;
+  width: 60%
+}

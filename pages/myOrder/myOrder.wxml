@@ -1,0 +1,63 @@
+ <view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">当前订单</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">待付款</view>
+  <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">已完成</view>
+  <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">全部</view>
+
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+
+
+  <swiper-item>
+    <view>当前订单</view>
+  </swiper-item>
+
+  <swiper-item>
+    <view>待付款</view>
+  </swiper-item>
+
+  <swiper-item>
+    <view>已完成</view>
+  </swiper-item>
+
+  <swiper-item>
+    <view>全部</view>
+  </swiper-item>
+
+</swiper> 
+
+
+
+
+<!-- 
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px;" bindchange="bindChange">
+
+  <swiper-item  >
+    <view>当前订单</view>
+  </swiper-item>
+
+  <swiper-item>
+    <view>待付款</view>
+  </swiper-item>
+
+  <swiper-item>
+    <view>已完成</view>
+  </swiper-item>
+
+  <swiper-item>
+    <view>全部</view>
+  </swiper-item>
+
+</swiper>
+
+
+
+<view class="swiper-tab1">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav" style='text-align:center'>当前订单</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav" style='text-align:center'>待付款</view>
+  <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav" style='text-align:center'>已完成</view>
+  <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav" style='text-align:center'>全部</view>
+
+</view> -->
+
+

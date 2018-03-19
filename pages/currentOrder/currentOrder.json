@@ -1,0 +1,24 @@
+{"pages": [
+  "pages/finish/finish"
+],
+"window": {
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#313131",
+  "navigationBarTitleText": "医佳护",
+  "navigationBarTextStyle": "#fff"
+},
+    "tabBar": {
+      "color": "#666666",
+      "selectedColor": "#2571c9",
+      "backgroundColor": "#fff",
+      "borderStyle": "black",
+      "list": [
+        {
+          "pagePath": "pages/finish/finish",
+          "iconPath": "images/home-icon.png",
+          "selectedIconPath": "images/homeSelected-icon.png",
+          "text": "首页"
+        }
+      ]
+    }
+}

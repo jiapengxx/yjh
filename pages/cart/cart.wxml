@@ -1,0 +1,14 @@
+<!--pages/cart/cart.wxml-->
+<view class='img'>
+<image style=' height:160rpx;width:160rpx;border-radius: 50%;' src='../../images/zyzyl.png' ></image>
+</view>
+
+<view class='txt'>
+<text>购物车竟然是空的</text>
+</view>
+
+<view class='qgg'>
+<button bindtap='goShop' >
+去逛逛
+</button>
+</view>

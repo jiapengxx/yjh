@@ -1,0 +1,2 @@
+/* pages/currentOrder/currentOrder.wxss */
+@import '../../utils/weui.wxss';
